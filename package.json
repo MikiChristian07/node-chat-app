@@ -1,0 +1,30 @@
+{
+  "name": "api-skeleton",
+  "version": "1.0.0",
+  "description": "My skeleton to all node rest apis",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mikord",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "mongoose": "^6.5.3",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "nodemon": "^2.0.19",
+    "pino": "^8.4.2"
+  }
+}

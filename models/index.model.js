@@ -1,9 +1,17 @@
 import mongoose from 'mongoose';
 
-const indexSchema = mongoose.Schema({
+const messageSchema = mongoose.Schema({
+  name: {
+    type: String,
+    requried: true
+  },
 
+  message: {
+    type: String,
+    required: true
+  }
 }, { timestamps: true });
 
-const Index = mongoose.model('Index', indexSchema);
+const Message = mongoose.model('Message', messageSchema);
 
-export default Index;
+export default Message;

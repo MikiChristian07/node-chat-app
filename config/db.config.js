@@ -4,9 +4,10 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import { logger } from '../app.js';
 
+// "C:\Program Files\MongoDB\Server\5.0\bin\mongod.exe" --dbpath="c:\data\db"
 dotenv.config();
 const dbConn = () => {
-  mongoose.connect(process.env.MONGO_URI)
+  mongoose.connect('mongodb://localhost/chatApp')
     .then(() => {
       logger.info('Connected to the database');
     })
